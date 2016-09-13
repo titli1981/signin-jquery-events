@@ -1,12 +1,15 @@
 $(document).ready(function() {
     console.log( "ready!");
 
-$("button").click(function(){
+$(".signin").click(function(){
     $('.modal').fadeIn();
 });
-$("button").click(function(){
+$(".close").click(function(){
     $('.modal').fadeOut();
 });
 
+$(".submit").click(function(){
+    $("input").addClass(".error")
+});
 
 });
